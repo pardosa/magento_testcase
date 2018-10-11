@@ -6,7 +6,7 @@ class After
 {
 	public function afterGetName(\Magento\Catalog\Model\Product $subject, $result)
     {
-        //return '<b>' . $subject->getData('manufacturer') . '</b> ' . $result;
-        return $subject->getCreatedAt() . ' ' . $result;
+        return $subject->getData('manufacturer') . ' ' . $result;
+        //return $subject->getCreatedAt() . ' ' . $result;
     }
 }
