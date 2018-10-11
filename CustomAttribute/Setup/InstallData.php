@@ -23,26 +23,33 @@ class InstallData implements InstallDataInterface
 			\Magento\Catalog\Model\Product::ENTITY,
 			'manufacturer',
 			[
-				'type' => 'text',
+				'type' => 'varchar',
 				'backend' => '',
 				'frontend' => '',
 				'label' => 'Manufacturer',
 				'input' => 'select',
-				'default' => ['Manufacturer 1', 'Manufacturer 2'],
 				'class' => '',
 				'source' => '',
 				'global' => \Magento\Eav\Model\Entity\Attribute\ScopedAttributeInterface::SCOPE_GLOBAL,
 				'visible' => true,
 				'required' => true,
 				'user_defined' => false,
-				'default' => '',
 				'searchable' => false,
 				'filterable' => false,
 				'comparable' => false,
 				'visible_on_front' => false,
 				'used_in_product_listing' => true,
 				'unique' => false,
-				'apply_to' => ''
+				'apply_to' => '',
+				'option' => array(
+					'value' => array( 
+			            'manufacturer1'   => array( 'Manufacturer 1' ),
+			            'manufacturer2'   => array( 'Manufacturer 2' ),
+			        )
+			    ),
+			    'default' => array(
+			        'manufacturer1'
+			    )
 			]
 		);
 	}
