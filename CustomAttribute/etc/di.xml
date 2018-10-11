@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<config>
+	<type name="Magento\Catalog\Model\Product">
+		<plugin name="TestCase_CustomAttribute::after" type="TestCase\CustomAttribute\Plugin\After" sortOrder="1" />
+	</type>
+</config>
